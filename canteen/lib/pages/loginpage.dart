@@ -42,7 +42,7 @@ class _loginpageState extends State<loginpage> {
               width: 100.0,
               height: 100.0,
               margin: EdgeInsets.only(top: 100.0, bottom: 10.0),
-              child: Image.asset('images/gla.png'),
+              child: Image.asset('images/applogo.png'),
             ),
             Container(
               margin: EdgeInsets.only(
@@ -96,14 +96,48 @@ class _loginpageState extends State<loginpage> {
               height: 10.0,
             ),
             Container(
+              margin: EdgeInsets.all(10.0),
               height: 50.0,
               decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(25.0)
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(25.0)),
+              child: Center(
+                child: Text(
+                  'Sign in',
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontFamily: 'Thasadith'),
+                ),
               ),
-              child: Center(child: Text("Sign In")),
-
             ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 50.0, right: 10.0),
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'Do not have an account?',
+                    style: TextStyle(
+                        color: Color(0xFFBDC2CB),
+                        fontSize: 20.0,
+                        fontFamily: 'Thasadith'),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    'SignUp.',
+                    style: TextStyle(
+                        fontFamily: 'Thasadith',
+                        color: Colors.green,
+                        fontSize: 22),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
