@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../pages/signup.dart';
 
 class loginpage extends StatefulWidget {
   loginpage({Key key}) : super(key: key);
@@ -127,6 +128,16 @@ class _loginpageState extends State<loginpage> {
                   ),
                   SizedBox(
                     width: 5,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => signup(),
+                        ),
+                      );
+                    },
                   ),
                   Text(
                     'SignUp.',
