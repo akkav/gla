@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/signuppage.dart'
+import '../pages/signup.dart';
 
 class loginpage extends StatefulWidget {
   loginpage({Key key}) : super(key: key);
@@ -112,9 +112,6 @@ class _loginpageState extends State<loginpage> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 10.0,
-            ),
             Container(
               margin: EdgeInsets.only(left: 50.0, right: 10.0),
               child: Row(
@@ -131,20 +128,16 @@ class _loginpageState extends State<loginpage> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => signup(),
-                        ),
-                      );
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (BuildContext context) => signup()));
                     },
-                  ),
-                  Text(
-                    'SignUp.',
-                    style: TextStyle(
-                        fontFamily: 'Thasadith',
-                        color: Colors.green,
-                        fontSize: 22),
+                    child: Text(
+                      'SignUp.',
+                      style: TextStyle(
+                          fontFamily: 'Thasadith',
+                          color: Colors.green,
+                          fontSize: 22),
+                    ),
                   )
                 ],
               ),

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "214458253895",
+    "firebase_url": "https://virtual-indexer-285005.firebaseio.com",
+    "project_id": "virtual-indexer-285005",
+    "storage_bucket": "virtual-indexer-285005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214458253895:android:ffb0f362df80eac501a762",
+        "android_client_info": {
+          "package_name": "com.example.canteen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214458253895-2ru8uek88mqudt1pgto2oun7clbcmh4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS124o0jL6FXFPbiKzNI3_Nal8z3xnaF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214458253895-2ru8uek88mqudt1pgto2oun7clbcmh4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
