@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/loginpage.dart';
+import 'package:canteen/src/pages/loginpage.dart';
 import 'dart:async';
 
 void main() {
