@@ -1,9 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:canteen/src/pages/loginpage.dart';
 import 'dart:async';
 
-void main() {
-  runApp(MaterialApp(home: Homepage()));
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(Homepage());
 }
 
 class Homepage extends StatefulWidget {

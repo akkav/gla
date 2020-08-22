@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../pages/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:canteen/src/pages/homepage.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class loginpage extends StatefulWidget {
   loginpage({Key key}) : super(key: key);
@@ -209,8 +211,8 @@ class _loginpageState extends State<loginpage> {
       _formKey.currentState.save();
 
       try {
-        firebaseAuth.signInWithEmailAndPassword(
-            email: _email, password: _password);
+        FirebaseUser user = firebaseAuth.signInWithEmailAndPassword(
+            email: _email, password: _password) as FirebaseUser;
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => homepagescreen()));
       } catch (e) {
